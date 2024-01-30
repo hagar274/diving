@@ -1,0 +1,245 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(../images/photo_2024-01-29_23-10-21.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-clip: content-box;
+    background-position: center center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 20px;
+}
+
+/* navbar */
+
+.nav{
+    position: fixed;
+    background-color: rgb(128, 200, 248);
+    color: antiquewhite;
+    overflow: hidden;
+    height: 40px;
+    width: 100%;
+}
+.nav span{
+    color: rgb(4, 74, 205);
+    padding: 15px;
+    float: left;
+}
+.nav ul{
+    list-style: none;
+}
+.nav ul li{
+    display: inline-block;
+}
+.nav ul li a{
+    padding: 15px;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    color: blue;
+}
+.nav ul li a:hover{
+    background-color: rgb(4, 74, 205);
+    color: aqua;
+}
+
+/* Home */
+
+.home .dive{
+    color: aliceblue;
+    text-align: left;
+    padding-top: 150px;
+    height: fit-content;
+    width: 50%;
+}
+.dive h2{
+    font-size: xx-large;
+    padding: 5px 100px;
+}
+hr{
+    margin: 0px 225px 0 60px;
+}
+
+.dive p{
+    padding: 40px;
+    font-size: medium;
+}
+
+.about{
+    padding: 100px;
+    text-align: center;
+    height: fit-content;
+    color: aliceblue
+}
+.about .water{
+    display: inline-block;
+    width: 50%;
+    min-width: 100%;
+}
+.about .water a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.about .water h2{
+    font-size: xx-large;
+    padding: 0px 350px 20px;
+    display: flex;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.about .water span hr{
+    margin: 15px 0 15px 25px;
+    padding: 0 70px;
+}
+.about .water p{
+    font-size: medium;
+    line-height: 20px;
+    padding: 0 0 0 40px;
+}
+
+.cont{
+    width: 80%;
+    height: 400px;
+    margin: -75px 100px 0 130px;
+    /* padding: 100px;
+    text-align: center;
+    height: fit-content;
+    color: aliceblue */
+}
+.cont .all{
+    /* display: inline; */
+    width: 30%;
+    height: 350px;
+    /* border: 2px solid blue; */
+    margin: 5px;
+    position: relative;
+    overflow: hidden;
+    float: left;
+    border: #fff solid;
+    box-shadow: 2px 2px 10px white;
+}
+.cont .all img{
+    /* display: inline;
+    margin: auto; */
+    width: 100%;
+    height: 100%;
+}
+.cont .all .info{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(170, 214, 199, 0.436);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(100%);
+}
+.cont .all .info h2{
+    color: #fff;
+    text-align: center;
+    line-height: 350px;
+    text-shadow: 5px 5px 5px wheat;
+    /* display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+*/
+}
+.cont .all:hover .info{
+    transition: .5s;
+    transform: translateX(0);
+}
+.cont h5 a{
+    text-decoration: none;
+    display: inline-flex;
+    color: #d0b9ffc9;
+    margin: 0 340px 80px;
+    font-size: x-large;
+    font-weight: bold;
+    padding: 30px 60px;
+}
+
+/* Footer */
+
+.footer{
+    padding: 20px;
+    text-align: center;
+    display: inline;
+    color: #fff;
+}
+.footer pre{
+    color: #fff;
+    margin: 0 0 -40px;
+}
+
+@media (max-width: 900px){
+    .home h2{
+        padding: 5px;
+    }
+    .about .water h2{
+        padding: inherit;
+        margin: 10px -60px;
+        display: inline-block;
+    }
+    .about .water span hr{
+        padding: 0 55px;
+        margin: 15px 10px 20px 15px;
+    }
+    .cont h5 a{
+        padding: inherit;
+        margin: 10px 180px;
+    }  
+    .footer pre{
+        display: none;
+    }  
+}
+
+
+@media (max-width: 600px) {
+    .nav{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        height: 90px;
+    }
+    .home h2{
+    padding: 5px 0 5px;
+    text-align: center;
+    /* margin: 5px -5px 5px 5px; */
+}
+hr{
+    padding: 0 80px 0 105px;
+}
+.home p{
+    padding: 10px 5px 75px 20px;
+    margin: -5px 0 0 0;
+    width: 325px;
+}
+.about .water h2{
+    padding: inherit;
+    margin: -60px 0 0 -130px;
+    display: inline-block;
+}
+.about .water span hr{
+    padding: 0 55px;
+    margin: 15px 10px 20px 15px;
+}
+.about .water p{
+    width: 225px;
+    padding: inherit;
+    margin: 0 -90px;
+}
+.cont{
+    margin: 0 auto;
+    width: 100%;
+}
+.cont .all .info h2{
+    font-size: larger;
+}
+.cont h5 a{
+    padding: inherit;
+    margin: 10px 200px;
+}
+}
